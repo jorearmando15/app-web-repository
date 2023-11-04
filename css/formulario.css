@@ -1,0 +1,147 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del encabezado de la página */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos generales del menú de navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón "Inicio" activo */
+.active {
+    background-color: #e85a71;
+}
+
+/* Estilos para el texto en la sección "text" */
+.text {
+    background-color: #e85a71;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+/* Estilos del encabezado "REGISTRAR PRODUCTO" */
+h1.text {
+    background-color: #e85a71;
+    text-align: center;
+    margin: 10px 0; /* Reduzca el margen superior a 10px (ajuste según sus preferencias) */
+    padding: 10px;
+}
+
+/* Estilos del formulario */
+form {
+    max-width: 600px;
+    margin: 5px auto 20px; /* Agrega 20px de margen inferior al formulario */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Ajusta el ancho de los campos de entrada y agrega margen solo a ellos */
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para los botones y enlaces */
+button,
+a.cancel {
+    background-color: #FF9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+/* Estilo especial para el enlace "Cancelar registro" */
+a.cancel {
+    background-color: red;
+}
+
+button:hover {
+    background-color: #FFB84D;
+}
+
+a.cancel:hover {
+    background-color: rgb(207, 92, 92);
+}
+
+/* Estilos para centrar botones */
+.center-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px; /* Agrega 20px de margen superior al pie de página */
+}

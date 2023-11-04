@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Registrar Nuevo Producto</title>
+</head>
+<body>
+    <header>
+        <h1>SuperTiendaOnline 
+            <i class="fas fa-store"></i>
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class=" active" href="../index.html">Inicio</a></li>
+            <li><a href="../app-tienda/ver-producto.html">Ver Productos</a></li>
+            <li><a href="../app-tienda/login.html">Login</a></li>
+        </ul>
+    </nav>
+    <h1 class="text">REGISTRAR PRODUCTO</h1>
+    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" name="nombre" id="nombre" required autofocus>
+        <br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" id="precio" step="0.01" required>
+        <br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" id="descripcion" rows="4" required></textarea>
+        <br>
+
+        <label for="imagen">Imagen del Producto:</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*" required>
+        <br>
+
+        <div class="center-button">
+        <button type="submit">Registrar Producto</button>
+        <a class="cancel" href="../index.html">Cancelar registro</a>
+        </div>
+    </form>
+    
+<footer>
+    <p>&copy; 2023 Tu Tienda en Línea. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

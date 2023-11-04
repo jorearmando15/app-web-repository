@@ -1,0 +1,130 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del encabezado de la página */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos generales del menú de navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+/* Estilos para el menú de navegación en hover */
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón "Inicio" activo */
+.active {
+    background-color: #e85a71;
+}
+
+
+/* Estilos para el contenedor de inicio de sesión (tipo tarjeta) */
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 50px;
+    max-width: 400px; /* Define el ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta en la pantalla */
+    margin-top: 10vh; /* Ajusta la distancia desde la parte superior de la ventana */
+    margin-bottom: 10vh; /* Agrega margen inferior para evitar que quede pegado al pie de página */
+}
+
+/* Aumenta el tamaño del título */
+h1 {
+    font-size: 28px; /* Aumenta el tamaño del título */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    text-align: center;
+}
+
+/* Aumenta el tamaño de los campos de entrada y el botón */
+input {
+    padding: 15px; /* Aumenta el tamaño del padding para los campos de entrada */
+    font-size: 18px; /* Aumenta el tamaño de fuente de los campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px; /* Aumenta el margen superior de los campos de entrada */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Aumenta el tamaño del botón de inicio de sesión */
+button {
+    background-color: #e85a71;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Aumenta el tamaño del padding para el botón */
+    font-size: 20px; /* Aumenta el tamaño de fuente del botón */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c94c63;
+}
+
+/* Estilos para el logo en el formulario de inicio de sesión */
+.logo {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo según tus preferencias */
+    display: block; /* Hace que el logo sea un bloque, lo que ayuda a centrarlo */
+    margin: 0 auto 20px; /* Centra el logo horizontalmente y agrega espacio inferior */
+}
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
