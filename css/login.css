@@ -69,10 +69,10 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 50px;
-    max-width: 400px; /* Define el ancho máximo de la tarjeta */
-    margin: 0 auto; /* Centra la tarjeta en la pantalla */
-    margin-top: 10vh; /* Ajusta la distancia desde la parte superior de la ventana */
-    margin-bottom: 10vh; /* Agrega margen inferior para evitar que quede pegado al pie de página */
+    max-width: 400px; 
+    margin: 0 auto; 
+    margin-top: 10vh; 
+    margin-bottom: 10vh; 
 }
 
 /* Aumenta el tamaño del título */
@@ -82,18 +82,22 @@ h1 {
     color: #333;
 }
 
+.text-color{
+    color: #fff;
+}
+
 form {
     text-align: center;
 }
 
 /* Aumenta el tamaño de los campos de entrada y el botón */
 input {
-    padding: 15px; /* Aumenta el tamaño del padding para los campos de entrada */
-    font-size: 18px; /* Aumenta el tamaño de fuente de los campos de entrada */
+    padding: 15px; 
+    font-size: 18px; 
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    margin-top: 10px; /* Aumenta el margen superior de los campos de entrada */
+    margin-top: 10px; 
     margin-bottom: 20px;
     box-sizing: border-box;
 }
@@ -103,8 +107,8 @@ button {
     background-color: #e85a71;
     color: #fff;
     border: none;
-    padding: 15px 30px; /* Aumenta el tamaño del padding para el botón */
-    font-size: 20px; /* Aumenta el tamaño de fuente del botón */
+    padding: 15px 30px; 
+    font-size: 20px; 
     border-radius: 5px;
     cursor: pointer;
 }
@@ -115,9 +119,9 @@ button:hover {
 
 /* Estilos para el logo en el formulario de inicio de sesión */
 .logo {
-    max-width: 100px; /* Ajusta el tamaño máximo del logo según tus preferencias */
-    display: block; /* Hace que el logo sea un bloque, lo que ayuda a centrarlo */
-    margin: 0 auto 20px; /* Centra el logo horizontalmente y agrega espacio inferior */
+    max-width: 100px; 
+    display: block; 
+    margin: 0 auto 20px; 
 }
 
 
