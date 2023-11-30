@@ -103,6 +103,12 @@ input[type="file"] {
     box-sizing: border-box;
 }
 
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+}
+
 /* Estilos para los botones y enlaces */
 button,
 a.cancel {

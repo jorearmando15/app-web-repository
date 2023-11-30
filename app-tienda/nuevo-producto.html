@@ -13,39 +13,48 @@
             <i class="fas fa-store"></i>
         </h1>
     </header>
+
     <nav>
         <ul>
-            <li><a class=" active" href="../index.html">Inicio</a></li>
+            <li><a class="active" href="../index.html">Inicio</a></li>
             <li><a href="../app-tienda/ver-producto.html">Ver Productos</a></li>
             <li><a href="../app-tienda/login.html">Login</a></li>
         </ul>
     </nav>
-    <h1 class="text">REGISTRAR PRODUCTO</h1>
-    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+
+    <h1 class="text">NUEVO PRODUCTO</h1>
+
+    <form id="formulario" action="procesar_formulario.php" method="post" enctype="multipart/form-data">
         <label for="nombre">Nombre del Producto:</label>
-        <input type="text" name="nombre" id="nombre" required autofocus>
+        <input type="text" name="nombre" id="nombre">
+        <div class="error-message" id="nombre-error"></div>
         <br>
 
         <label for="precio">Precio:</label>
-        <input type="number" name="precio" id="precio" step="0.01" required>
+        <input type="number" name="precio" id="precio" step="0.01">
+        <div class="error-message" id="precio-error"></div>
         <br>
 
-        <label for="descripcion">Descripción:</label>
-        <textarea name="descripcion" id="descripcion" rows="4" required></textarea>
+        <label for="inventario">Inventario:</label>
+        <input type="number" name="inventario" id="inventario" min="0">
+        <div class="error-message" id="inventario-error"></div>
         <br>
 
         <label for="imagen">Imagen del Producto:</label>
-        <input type="file" name="imagen" id="imagen" accept="image/*" required>
-        <br>
+        <input type="file" name="imagen" id="imagen" accept="image/*">
+        <div class="error-message" id="imagen-error"></div>
+        
 
         <div class="center-button">
-        <button type="submit">Registrar Producto</button>
-        <a class="cancel" href="../index.html">Cancelar registro</a>
+            <button type="submit">Crear Producto</button>
+            <a class="cancel" href="../index.html">Cancelar registro</a>
         </div>
     </form>
     
-<footer>
-    <p>&copy; 2023 Tu Tienda en Línea. Todos los derechos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2023 Tu Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/validar-formulario.js"></script>
 </body>
 </html>
